@@ -1,6 +1,6 @@
 ---
 title: "Decision Support System"
-excerpt: "Designed and created an algorithm using Excel VBA to assist with scheduling and time management <br/><img src='/images/500x300.png'>"
+excerpt: "Designed and created an algorithm using Excel VBA to assist with scheduling and time management <br/><img src='/images/data-processing.png'>"
 collection: portfolio
 ---
 
