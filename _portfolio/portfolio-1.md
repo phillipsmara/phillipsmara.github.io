@@ -1,7 +1,7 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Financial Planner"
+excerpt: "Developed an automated financial planner using Excel VBA in order to assist users with budgeting, expense tracking, and investment analysis over the course of their university degree 1<br/><img src='/images/500x300.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+https://github.com/phillipsmara/financialplanner
