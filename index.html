@@ -55,7 +55,7 @@
   .tl-desc{font-size:13px;color:rgba(232,230,240,0.5);line-height:1.65;}
 
   .projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.25rem;}
-  .project-card{background:rgba(175,169,236,0.04);border:0.5px solid rgba(175,169,236,0.12);border-radius:16px;padding:1.5rem;transition:border-color 0.25s,transform 0.2s;position:relative;overflow:hidden;}
+  .project-card{background:rgba(175,169,236,0.04);border:0.5px solid rgba(175,169,236,0.12);border-radius:16px;padding:1.5rem;transition:border-color 0.25s,transform 0.2s;position:relative;overflow:hidden;display:flex;flex-direction:column;}
   .project-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;}
   .project-card.purple::before{background:linear-gradient(90deg,var(--p600),var(--p200));}
   .project-card.teal::before{background:linear-gradient(90deg,var(--t600),var(--t200));}
@@ -70,7 +70,7 @@
   .project-icon.amber{background:rgba(133,79,11,0.2);}
   .project-icon.green{background:rgba(59,109,17,0.2);}
   .project-title{font-size:15px;font-weight:600;color:#e8e6f0;margin-bottom:6px;}
-  .project-desc{font-size:13px;color:rgba(232,230,240,0.5);line-height:1.65;margin-bottom:1rem;}
+  .project-desc{font-size:13px;color:rgba(232,230,240,0.5);line-height:1.65;margin-bottom:1rem;flex:1;}
   .tag-row{display:flex;flex-wrap:wrap;gap:6px;}
   .tag{font-size:11px;letter-spacing:0.04em;padding:3px 9px;border-radius:20px;}
   .tag.purple{background:rgba(83,74,183,0.15);color:var(--p200);border:0.5px solid rgba(83,74,183,0.3);}
@@ -79,6 +79,8 @@
   .tag.amber{background:rgba(133,79,11,0.15);color:#EF9F27;border:0.5px solid rgba(239,159,39,0.3);}
   .tag.green{background:rgba(59,109,17,0.15);color:var(--g200);border:0.5px solid rgba(151,196,89,0.3);}
   .wip-badge{display:inline-block;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#EF9F27;background:rgba(133,79,11,0.15);border:0.5px solid rgba(239,159,39,0.3);padding:2px 8px;border-radius:20px;margin-left:8px;vertical-align:middle;}
+  .github-btn{display:inline-block;margin-top:1rem;font-size:12px;color:rgba(232,230,240,0.4);text-decoration:none;border:0.5px solid rgba(175,169,236,0.2);padding:4px 12px;border-radius:20px;transition:color 0.2s,border-color 0.2s;align-self:flex-start;}
+  .github-btn:hover{color:var(--p200);border-color:rgba(175,169,236,0.5);}
 
   .clubs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem;}
   .club-card{background:rgba(29,158,117,0.04);border:0.5px solid rgba(93,202,165,0.12);border-radius:16px;padding:1.5rem;}
@@ -192,7 +194,7 @@
         <span class="tag teal">API</span>
         <span class="tag teal">Toronto Open Data</span>
       </div>
-      <a href="https://github.com/phillipsmara/toronto-fire-prediction-model-app" target="_blank" style="display:inline-block;margin-top:1rem;font-size:12px;color:rgba(232,230,240,0.4);text-decoration:none;border:0.5px solid rgba(175,169,236,0.2);padding:4px 12px;border-radius:20px;">View on GitHub</a>
+      <a href="https://github.com/phillipsmara/toronto-fire-prediction-model-app" target="_blank" class="github-btn">View on GitHub</a>
     </div>
 
     <div class="project-card purple">
@@ -204,7 +206,7 @@
         <span class="tag purple">Azure Data Factory</span>
         <span class="tag purple">Power BI</span>
       </div>
-      <a href="https://github.com/phillipsmara/sp500project" target="_blank" style="display:inline-block;margin-top:1rem;font-size:12px;color:rgba(232,230,240,0.4);text-decoration:none;border:0.5px solid rgba(175,169,236,0.2);padding:4px 12px;border-radius:20px;">View on GitHub</a>
+      <a href="https://github.com/phillipsmara/sp500project" target="_blank" class="github-btn">View on GitHub</a>
     </div>
 
     <div class="project-card green">
@@ -216,7 +218,7 @@
         <span class="tag green">VBA Macros</span>
         <span class="tag green">Pivot Charts</span>
       </div>
-      <a href="https://github.com/phillipsmara/financialplanner" target="_blank" style="display:inline-block;margin-top:1rem;font-size:12px;color:rgba(232,230,240,0.4);text-decoration:none;border:0.5px solid rgba(175,169,236,0.2);padding:4px 12px;border-radius:20px;">View on GitHub</a>
+      <a href="https://github.com/phillipsmara/financialplanner" target="_blank" class="github-btn">View on GitHub</a>
     </div>
 
     <div class="project-card amber">
@@ -228,7 +230,7 @@
         <span class="tag amber">VBA Macros</span>
         <span class="tag amber">Decision Support</span>
       </div>
-      <a href="https://github.com/phillipsmara/decisionsupportsystem" target="_blank" style="display:inline-block;margin-top:1rem;font-size:12px;color:rgba(232,230,240,0.4);text-decoration:none;border:0.5px solid rgba(175,169,236,0.2);padding:4px 12px;border-radius:20px;">View on GitHub</a>
+      <a href="https://github.com/phillipsmara/decisionsupportsystem" target="_blank" class="github-btn">View on GitHub</a>
     </div>
 
     <div class="project-card coral">
@@ -281,7 +283,7 @@
   <p>Open to research, internship, and collaboration opportunities.</p>
   <div class="contact-links">
     <a href="mailto:m24phill@uwaterloo.ca" class="btn-primary">Email me</a>
-    <a href="https://www.linkedin.com/in/phillmara" class="btn-ghost">LinkedIn</a>
+    <a href="https://www.linkedin.com/in/phillmara" target="_blank" class="btn-ghost">LinkedIn</a>
   </div>
 </div>
 
