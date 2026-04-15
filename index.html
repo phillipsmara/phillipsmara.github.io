@@ -16,6 +16,7 @@
   html{scroll-behavior:smooth;}
   body{font-family:'Inter','Segoe UI',sans-serif;background:#0d0d12;color:#e8e6f0;overflow-x:hidden;line-height:1.6;}
 
+  /* Fixed grid sits behind everything */
   .page-bg{
     position:fixed;inset:0;z-index:0;pointer-events:none;
     background-image:
@@ -23,11 +24,15 @@
       linear-gradient(90deg,rgba(175,169,236,0.04) 1px,transparent 1px);
     background-size:60px 60px;
   }
-  .page-bg-glow{
-    position:absolute;inset:0;
+
+  /* Glow orbs are on the body pseudo-element so they scroll with the page */
+  body::before{
+    content:'';
+    position:fixed;inset:0;z-index:0;pointer-events:none;
     background:
-      radial-gradient(ellipse 60% 50% at 80% 20%,rgba(83,74,183,0.18) 0%,transparent 70%),
-      radial-gradient(ellipse 40% 40% at 10% 80%,rgba(29,158,117,0.12) 0%,transparent 60%);
+      radial-gradient(ellipse 70% 40% at 85% 10%,rgba(83,74,183,0.22) 0%,transparent 65%),
+      radial-gradient(ellipse 50% 35% at 10% 60%,rgba(29,158,117,0.15) 0%,transparent 60%),
+      radial-gradient(ellipse 60% 40% at 50% 100%,rgba(83,74,183,0.10) 0%,transparent 60%);
   }
 
   nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:1.1rem 3rem;background:rgba(13,13,18,0.7);backdrop-filter:blur(16px);border-bottom:0.5px solid rgba(175,169,236,0.15);}
@@ -119,7 +124,7 @@
 </head>
 <body>
 
-<div class="page-bg"><div class="page-bg-glow"></div></div>
+<div class="page-bg"></div>
 
 <nav>
   <span class="nav-logo">MP</span>
