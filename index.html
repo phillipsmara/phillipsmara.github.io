@@ -52,7 +52,10 @@
   .tl-vline{width:0.5px;flex:1;background:rgba(175,169,236,0.12);margin-top:4px;}
   .tl-role{font-size:15px;font-weight:600;color:#e8e6f0;}
   .tl-org{font-size:13px;color:var(--p200);margin-top:2px;margin-bottom:8px;}
-  .tl-desc{font-size:13px;color:rgba(232,230,240,0.5);line-height:1.65;}
+  .tl-desc{font-size:13px;color:rgba(232,230,240,0.5);line-height:1.65;margin-bottom:10px;}
+
+  .skill-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
+  .skill-tag{font-size:11px;letter-spacing:0.03em;padding:3px 10px;border-radius:20px;background:rgba(175,169,236,0.08);color:rgba(175,169,236,0.65);border:0.5px solid rgba(175,169,236,0.18);}
 
   .projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.25rem;}
   .project-card{background:rgba(175,169,236,0.04);border:0.5px solid rgba(175,169,236,0.12);border-radius:16px;padding:1.5rem;transition:border-color 0.25s,transform 0.2s;position:relative;overflow:hidden;display:flex;flex-direction:column;}
@@ -88,6 +91,12 @@
   .club-role{font-size:12px;color:var(--t200);margin-bottom:10px;letter-spacing:0.02em;}
   .club-desc{font-size:13px;color:rgba(232,230,240,0.5);line-height:1.65;}
 
+  .facts-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.25rem;}
+  .fact-card{border-radius:16px;padding:1.5rem;border:0.5px solid rgba(175,169,236,0.1);background:rgba(255,255,255,0.02);transition:transform 0.2s,border-color 0.2s;}
+  .fact-card:hover{transform:translateY(-3px);border-color:rgba(175,169,236,0.25);}
+  .fact-emoji{font-size:28px;margin-bottom:0.75rem;display:block;line-height:1;}
+  .fact-desc{font-size:14px;color:rgba(232,230,240,0.6);line-height:1.65;}
+
   .contact-section{text-align:center;padding:6rem 3rem;position:relative;overflow:hidden;}
   .contact-bg{position:absolute;inset:0;background:radial-gradient(ellipse 50% 80% at 50% 100%,rgba(83,74,183,0.12) 0%,transparent 70%);}
   .contact-section h2{font-size:clamp(2rem,4vw,3rem);font-weight:700;letter-spacing:-0.02em;color:#e8e6f0;position:relative;z-index:1;margin-bottom:0.75rem;}
@@ -105,6 +114,7 @@
     <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
     <a href="#leadership">Leadership</a>
+    <a href="#facts">Fun Facts</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -163,6 +173,15 @@
         <div class="tl-role">Global Economic Sanctions Analyst</div>
         <div class="tl-org">RBC · Royal Bank of Canada</div>
         <div class="tl-desc">Served as the sole technical team member on an entirely non-technical team, automating routine data processes and analyzing large datasets using Python to support global economic sanctions compliance.</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python (pandas, openpyxl)</span>
+          <span class="skill-tag">Excel (VBA)</span>
+          <span class="skill-tag">Research Methods</span>
+          <span class="skill-tag">Documentation</span>
+          <span class="skill-tag">Copilot</span>
+          <span class="skill-tag">AI Prompting</span>
+          <span class="skill-tag">Report Generation</span>
+        </div>
       </div>
     </div>
 
@@ -172,7 +191,14 @@
       <div class="tl-content">
         <div class="tl-role">Systems Analyst</div>
         <div class="tl-org">Maple Leaf Foods</div>
-        <div class="tl-desc">Applied systems analysis and process improvement principles to operational challenges at a major Canadian food company.</div>
+        <div class="tl-desc">Contributed to system testing, product data management during the Canada Packers spinoff, and fiscal year project planning at one of Canada's largest food companies.</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Power BI</span>
+          <span class="skill-tag">Microsoft Project (Gantt Charts)</span>
+          <span class="skill-tag">Excel</span>
+          <span class="skill-tag">SAP (Demand Planning Models)</span>
+          <span class="skill-tag">Layout Design (Warehouses)</span>
+        </div>
       </div>
     </div>
 
@@ -272,6 +298,39 @@
       <div class="club-title">Academic Representative</div>
       <div class="club-role">Management Engineering · 3 Consecutive Terms</div>
       <div class="club-desc">Elected by classmates for three consecutive terms, advocating for student needs and bridging communication between students and faculty in the Management Engineering program.</div>
+    </div>
+
+  </div>
+</section>
+
+<section id="facts">
+  <div class="section-eyebrow">Beyond the Resume</div>
+  <div class="section-title">Fun Facts</div>
+  <div class="facts-grid">
+
+    <div class="fact-card">
+      <span class="fact-emoji">🧡</span>
+      <div class="fact-desc">I am a huge F1 fan, specifically McLaren 🧡</div>
+    </div>
+
+    <div class="fact-card">
+      <span class="fact-emoji">📚</span>
+      <div class="fact-desc">I love to read and currently own over 400 books. I am currently reading Bobby Fischer Goes to War.</div>
+    </div>
+
+    <div class="fact-card">
+      <span class="fact-emoji">⚾</span>
+      <div class="fact-desc">I love the Blue Jays and went to see them play the Dodgers this season. (Do not ask me about the score.)</div>
+    </div>
+
+    <div class="fact-card">
+      <span class="fact-emoji">🎵</span>
+      <div class="fact-desc">My favourite band is Oasis. Currently my favourite song is Cast No Shadow.</div>
+    </div>
+
+    <div class="fact-card">
+      <span class="fact-emoji">🪡</span>
+      <div class="fact-desc">I like to teach myself new skills. Right now I am learning to sew.</div>
     </div>
 
   </div>
