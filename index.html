@@ -66,6 +66,7 @@
   .tl-line{display:flex;flex-direction:column;align-items:center;}
   .tl-dot{width:9px;height:9px;border-radius:50%;border:2px solid var(--p600);background:#0d0d12;flex-shrink:0;margin-top:4px;}
   .tl-dot.active{background:var(--p600);}
+  .tl-dot.incoming{border-color:var(--a400);background:#0d0d12;}
   .tl-vline{width:0.5px;flex:1;background:rgba(175,169,236,0.12);margin-top:4px;}
   .tl-role{font-size:15px;font-weight:600;color:#e8e6f0;}
   .tl-org{font-size:13px;color:var(--p200);margin-top:2px;margin-bottom:8px;}
@@ -73,6 +74,9 @@
 
   .skill-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px;}
   .skill-tag{font-size:11px;letter-spacing:0.03em;padding:3px 10px;border-radius:20px;background:rgba(175,169,236,0.08);color:rgba(175,169,236,0.65);border:0.5px solid rgba(175,169,236,0.18);}
+
+  .current-badge{display:inline-block;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:var(--t200);background:rgba(15,110,86,0.15);border:0.5px solid rgba(93,202,165,0.35);padding:2px 8px;border-radius:20px;margin-left:8px;vertical-align:middle;}
+  .incoming-badge{display:inline-block;font-size:10px;letter-spacing:0.08em;text-transform:uppercase;color:#EF9F27;background:rgba(133,79,11,0.15);border:0.5px solid rgba(239,159,39,0.3);padding:2px 8px;border-radius:20px;margin-left:8px;vertical-align:middle;}
 
   .projects-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1.25rem;}
   .project-card{background:rgba(175,169,236,0.04);border:0.5px solid rgba(175,169,236,0.12);border-radius:16px;padding:1.5rem;transition:border-color 0.25s,transform 0.2s;position:relative;overflow:hidden;display:flex;flex-direction:column;}
@@ -173,12 +177,22 @@
   <div class="timeline">
 
     <div class="timeline-item">
-      <div class="tl-date">Summer 2026</div>
+      <div class="tl-date">Fall 2026</div>
+      <div class="tl-line"><div class="tl-dot incoming"></div><div class="tl-vline"></div></div>
+      <div class="tl-content">
+        <div class="tl-role">Data Scientist <span class="incoming-badge">Incoming</span></div>
+        <div class="tl-org">RBC · Royal Bank of Canada</div>
+        <div class="tl-desc">Incoming data science role at RBC.</div>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="tl-date">May 2026 · Present</div>
       <div class="tl-line"><div class="tl-dot active"></div><div class="tl-vline"></div></div>
       <div class="tl-content">
-        <div class="tl-role">Research Assistant</div>
+        <div class="tl-role">Research Assistant <span class="current-badge">Current</span></div>
         <div class="tl-org">University of Waterloo · Prof. Jangho Yang</div>
-        <div class="tl-desc">Upcoming research position contributing to academic work under faculty supervision in the Management Engineering department.</div>
+        <div class="tl-desc">Contributing to academic research under faculty supervision in the Management Engineering department.</div>
       </div>
     </div>
 
